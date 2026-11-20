@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="moles.js" defer></script>
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>🐹 Whack-a-Mole</h1>
+        <p class="subtitle">A fun little arcade game!</p>
+    </header>
+    <div class="scoreboard">
+
+        <div class="stat-box">
+            <span class="stat-icon">🏆</span>
+            <div>
+                <p>High Score</p>
+                <span id="best-score">0</span>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <span class="stat-icon">⭐</span>
+            <div>
+                <p>Score</p>
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <span class="stat-icon">🕒</span>
+            <div>
+                <p>Time</p>
+                <span><span id="time">30</span>s</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="game-layout">
+        <section class="information">
+
+            <div class="info-card">
+                <h2>About the Game</h2>
+                <p>
+                    Whack-a-Mole is a simple arcade game.
+                    Moles randomly appear from holes.
+                    Your goal is to hit as many moles as possible
+                    before the time runs out.
+                </p>
+
+                <h2>How to Play</h2>
+
+                <div class="instructions">
+                    <span>1</span>
+                    <p>Click Start Game to begin.</p>
+                </div>
+
+                <div class="instructions">
+                    <span>2</span>
+                    <p>Click on the moles when they appear.</p>
+                </div>
+
+                <div class="instructions">
+                    <span>3</span>
+                    <p>Get as many points as possible before the timer reaches 0!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-area">
+
+            <div id="game-board">
+
+                <button class="hole"></button>
+                <button class="hole"></button>
+                <button class="hole"></button>
+
+                <button class="hole"></button>
+                <button class="hole"></button>
+                <button class="hole"></button>
+
+                <button class="hole"></button>
+                <button class="hole"></button>
+                <button class="hole"></button>
+
+            </div>
+
+            <p id="message">Press Start Game to begin!</p>
+        </section>
+
+        <section class="controls">
+
+            <button id="start-btn">▶ Start Game</button>
+
+            <button id="restart-btn">↻ Restart</button>
+
+            <div class="cute-mole">🐹</div>
+
+        </section>
+    </main>
+</body>
+</html>
